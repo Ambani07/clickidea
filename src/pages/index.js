@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
 // import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
-import Pricing from '../components/Pricing';
+import Pricing from '../components/Pricing/Pricing';
 import Contact from '../components/Contact/Contact'
 import {
   homeCoverData,
@@ -20,18 +20,29 @@ const Home = () => {
     setIsOpen(!isOpen);
   };
 
+  const menuItems = [{
+    id: 'about',
+    title: 'About',
+  },{
+    id: 'services',
+    title: 'Services',
+  },{
+    id: 'pricing',
+    title: 'Price',
+  },{
+    id: 'contactus',
+    title: 'Contact',
+  }]
+
   return (
     <>
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle} />
-      {/* <HeroSection {...homeCoverObj} /> */}
+      <Navbar toggle={toggle} menu={menuItems} home={true} />
       <InfoSection {...homeCoverData} />
       <InfoSection {...homeAboutObj} />
       <Services />
       <Pricing />
       <Contact {...homeObjContact} />
-      {/* <InfoSection {...homeObjTwo} />
-      <InfoSection {...homeObjThree} /> */}
       <Footer />
     </>
   );

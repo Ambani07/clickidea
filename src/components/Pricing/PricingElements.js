@@ -65,7 +65,6 @@ export const PricingCard = styled.div`
         transform: scale(1.06);
         transition: all 0.3s ease-out;
         color: #1c2237;
-        cursor: pointer;
     }
 
     @media screen and (max-width: 960px) {
@@ -138,4 +137,13 @@ export const Button = styled.button`
     @media screen and (max-width: 960px) {
         width: 100%;
     }
+`
+
+
+export const Form = styled.form`
+
+`;
+
+export const FormInput = styled.input ` 
+
 `

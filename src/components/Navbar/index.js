@@ -10,10 +10,11 @@ import {
   NavMenu,
   NavItem,
   NavLinks,
+  NavLink,
   NavIcon
 } from "./NavbarElements";
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggle, menu, home }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -44,19 +45,31 @@ const Navbar = ({ toggle }) => {
               <FaBars />
             </MobileIcon>
             <NavMenu>
-              <NavItem>
-                <NavLinks
-                  to="about"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
-                  About
-                </NavLinks>
-              </NavItem>
-              <NavItem>
+              
+
+              {home ? menu.map((item, index) => (
+                <NavItem key={index}>
+                  <NavLinks
+                    to={item.id}
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}
+                  >
+                    {item.title}
+                  </NavLinks>
+                </NavItem>
+              )): (                
+                  <NavItem >
+                      <NavLink to={'/'} >
+                        Home
+                      </NavLink>
+                  </NavItem>
+              )}
+
+
+              {/* <NavItem>
                 <NavLinks
                   to="services"
                   smooth={true}
@@ -91,7 +104,7 @@ const Navbar = ({ toggle }) => {
                 >
                   Contact
                 </NavLinks>
-              </NavItem>
+              </NavItem> */}
               {/* <NavItem>
                 <NavLinks
                   to="signup"

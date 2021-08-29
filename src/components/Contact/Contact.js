@@ -41,7 +41,7 @@ const Contact = ({
     darkText,
   }) => {
 
-    const API_PATH = 'api/contact.php';
+    const API_PATH = '/api/contact.php';
 
     //Form states
     const [name, setName] = useState('')
@@ -50,20 +50,6 @@ const Contact = ({
     const [message, setMessage] = useState('')
     const [phoneErrorMessage, setPhoneErrorMessage]= useState('')
     const [formStatus, setFormStatus] = useState(false)
-
-    // handleFormSubmit = e => {
-    //   e.preventDefault();
-    //   axios({
-    //     method: 'post',
-    //     url: `${API_PATH}`,
-    //     headers: { 'content-type': 'application/json' },
-    //     data: {name: 'ambani', email: 'test@gmail.com'}
-    //   })
-    //     .then(result => {
-    //       console.log(result.data)
-    //     })
-    //     .catch(error => console.log(error.message));
-    // };
 
     const onContactHandler = (e) => {
       e.preventDefault();
