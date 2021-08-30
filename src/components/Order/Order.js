@@ -49,8 +49,13 @@ function Order({id}) {
   const value =  id;
 
   useEffect(() => {
-    // orderPlan(value)
-  }, [id, value, cart])
+    if(formStatus) {
+      setTimeout(() => {
+        history.push('/')
+        dispatch(clearCart())
+      }, 5000);
+    }
+  }, [id, value, cart, formStatus, dispatch, history])
 
   const removeItem = (value) => {
     console.log('remove Item ', value)
@@ -100,12 +105,7 @@ function Order({id}) {
 
         alert.success('Order was successful. We will contact you')
 
-        if(formStatus) {
-          setTimeout(() => {
-            history.push('/')
-            dispatch(clearCart())
-          }, 5000);
-        }
+        
       })
       .catch(error => console.log(error.message));
     }

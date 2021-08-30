@@ -8,7 +8,7 @@ export const ContactContainer = styled.div`
   background: ${({ lightBg }) => (lightBg ? secondary_color : primary_color)};
 
   @media screen and (max-width: 768px) {
-    padding: 100px 0;
+    padding: 50px 0 180px 0;
   }
 `;
 
@@ -142,7 +142,7 @@ export const Form = styled.form`
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
 
   @media screen and (max-width: 400px) {
-    padding: 10px 32px;
+    padding: 10px 16px;
   }
 `;
 
@@ -174,7 +174,8 @@ export const PhoneNumberFormInput = styled.input`
   width: 500px;
 
   @media screen and (max-width: 480px) {
-    width: 218px;
+    width: 260px;
+    margin-bottom: 16px
   }
 `;
 
@@ -186,7 +187,22 @@ export const FormInput = styled.input`
   width: 500px;
 
   @media screen and (max-width: 480px) {
-    width: 218px;
+    width: 260px;
+    margin-bottom: 16px;
+  }
+`;
+
+export const FormInputTextArea = styled.textarea`
+  padding: 16px 16px;
+  margin-bottom: 32px;
+  border: none;
+  border-radius: 4px;
+  width: 500px;
+  min-height: 100px;
+
+  @media screen and (max-width: 480px) {
+    width: 260px;
+    margin-bottom: 16px;
   }
 `;
 

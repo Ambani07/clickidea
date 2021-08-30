@@ -141,9 +141,10 @@ export const Button = styled.button`
 
 
 export const Form = styled.form`
-
+    margin: 0;
+    padding: 0;
 `;
 
 export const FormInput = styled.input ` 
-
+    margin: 0;
 `

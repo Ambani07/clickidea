@@ -25,6 +25,7 @@ import {
     PhoneNumberFormInputError,
     PhoneNumberFormInput,
     FormInput,
+    FormInputTextArea,
     FormButton,
     SocialIcons,
     SocialIconLink,
@@ -101,7 +102,7 @@ const Contact = ({
                 <TopLine>Let's Get In Touch</TopLine>
                 <Subtitle darkText={darkText}>Cell: 067 134 8606 <br />Email: ambani.matsedu@gmail.com</Subtitle>
                 <TopLine>Hours</TopLine>
-                <Subtitle darkText={darkText}>Mon - Fri: 09H00 AM - 18H00 PM <br />Sat: 09H00 AM - 14H00 PM</Subtitle>
+                <Subtitle darkText={darkText}>Mon - Fri: 09H00 AM - 16H00 PM <br />Sat: 09H00 AM - 12H00 PM</Subtitle>
                 <TopLine>Follow Us</TopLine>
                 <SocialIcons>
                 <SocialIconLink href='/' target="_blank" arial-label="Facebook">
@@ -170,7 +171,7 @@ const Contact = ({
                           required
                         />
                         <FormLabel htmlFor="for">Message</FormLabel>
-                        <FormInput 
+                        <FormInputTextArea
                           type="text"
                           value={message}
                           name="message"

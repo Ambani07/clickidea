@@ -1,8 +1,8 @@
 import React from "react";
 
 import Icon1 from "../../images/webdesign.svg";
-import Icon2 from "../../images/market-1.svg";
-import Icon3 from "../../images/world.svg";
+import Icon2 from "../../images/onlineshop.svg";
+import Icon3 from "../../images/hosting.svg";
 
 // GrPersonalComputer
 import {
@@ -29,16 +29,16 @@ const Services = () => {
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon2}></ServicesIcon>
-          <ServicesH2>Social Media Marketing</ServicesH2>
+          <ServicesH2>eCommerce</ServicesH2>
           <ServicesP>
-            We help your business get setup on social media and manage the ad campaigns for you.
+            We help business setup online shops with secure payment gateways.
           </ServicesP>
         </ServicesCard>
         <ServicesCard>
           <ServicesIcon src={Icon3}></ServicesIcon>
-          <ServicesH2>SEO</ServicesH2>
+          <ServicesH2>Hosting</ServicesH2>
           <ServicesP>
-            Unlock the ultimate online presence and many more with the lates technology solutions.
+            Affordable hosting solutions for emails and web applications.
           </ServicesP>
         </ServicesCard>
       </ServicesWrapper>

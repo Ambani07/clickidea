@@ -2,6 +2,8 @@ import React from "react";
 
 import { animateScroll as scroll } from "react-scroll";
 
+import img from "../../images/clogo2.png";
+
 import {
   FaFacebook,
   FaInstagram,
@@ -24,8 +26,9 @@ import {
   WebsiteRights,
   SocialIcons,
   SocialIconLink,
-  SocialIcon,
-  FooterAddressLink
+  FooterLogoText,
+  FooterAddressLink,
+  Img
 } from "./FooterElements";
 
 const Footer = () => {
@@ -38,45 +41,6 @@ const Footer = () => {
         <FooterWrap>
           <FooterLinksContainer>
             <FooterLinksWrapper>
-              {/* <FooterLinkItems>
-                <FooterLinkTitle>Menu</FooterLinkTitle>
-                <FooterLinks 
-                  to="about"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}>
-                    About
-                </FooterLinks>
-                <FooterLinks 
-                  to="services"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}>
-                    services
-                </FooterLinks>
-                <FooterLinks 
-                  to="pricing"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}>
-                    Prices
-                </FooterLinks>
-                <FooterLinks 
-                  to="contactus"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}>
-                    Contact Us
-                </FooterLinks>
-              </FooterLinkItems> */}
             </FooterLinksWrapper>
             <FooterLinksWrapper>
               <FooterLinkItems>
@@ -96,8 +60,8 @@ const Footer = () => {
           <SocialMedia>
             <SocialMediaWrap>
               <SocialLogo onClick={toggleHome}>
-                <SocialIcon />
-                Clickideas
+              <Img src={img} alt={'logo'} />
+              <FooterLogoText>lickideas</FooterLogoText>
               </SocialLogo>
               <WebsiteRights>
                 Clickideas &copy; 2021

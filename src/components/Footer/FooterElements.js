@@ -148,3 +148,18 @@ export const FooterLinks = styled(LinkS)`
     transition: 0.3s ease-out;
   }
 `;
+
+export const Img = styled.img`
+  margin: 0;
+`;
+
+export const FooterLogoText = styled.p  `
+  position: relative;
+  right: 18px;
+
+  @media screen and (max-width: 768px) {
+    position: relative;
+    right: 18px;
+    /* padding-top: 0.7rem; */
+  }
+`

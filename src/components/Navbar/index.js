@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { FaBars } from "react-icons/fa";
 import { IconContext } from "react-icons/lib";
 import { animateScroll as scroll } from "react-scroll";
+
+import img from "../../images/clogo2.png";
 import {
   Nav,
   NavbarContainer,
@@ -11,7 +13,8 @@ import {
   NavItem,
   NavLinks,
   NavLink,
-  NavIcon
+  NavLogoText,
+  Img
 } from "./NavbarElements";
 
 const Navbar = ({ toggle, menu, home }) => {
@@ -38,8 +41,8 @@ const Navbar = ({ toggle, menu, home }) => {
         <Nav scrollNav={scrollNav}>
           <NavbarContainer>
             <NavLogo to="/" onClick={toggleHome}>
-              <NavIcon />
-              Clickideas
+              <Img src={img} alt={'logo'} />
+              <NavLogoText>lickideas</NavLogoText>
             </NavLogo>
             <MobileIcon onClick={toggle}>
               <FaBars />
@@ -67,56 +70,6 @@ const Navbar = ({ toggle, menu, home }) => {
                       </NavLink>
                   </NavItem>
               )}
-
-
-              {/* <NavItem>
-                <NavLinks
-                  to="services"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
-                  Services
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  to="pricing"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
-                  Prices
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks
-                  to="contactus"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
-                  Contact
-                </NavLinks>
-              </NavItem> */}
-              {/* <NavItem>
-                <NavLinks
-                  to="signup"
-                  smooth={true}
-                  duration={500}
-                  spy={true}
-                  exact="true"
-                  offset={-80}
-                >
-                  Sign Up
-                </NavLinks>
-              </NavItem> */}
             </NavMenu>
             {/* <NavBtn>
               <NavBtnLink to="/signin">Sign In</NavBtnLink>

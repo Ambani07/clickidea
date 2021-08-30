@@ -8,7 +8,7 @@ import { CgWebsite } from 'react-icons/cg'
 
 import { AiFillShop } from 'react-icons/ai'
 
-import { IoMdAnalytics } from 'react-icons/io'
+import { FaServer } from 'react-icons/fa'
 
 import { useHistory } from "react-router-dom"
 
@@ -66,7 +66,7 @@ const Pricing = () => {
                                     <PricingCardIcon>
                                         <CgWebsite style={{display: product.id === 1 ? 'block' : 'none'}} />
                                         <AiFillShop style={{display: product.id === 2 ? 'block' : 'none'}} />
-                                        <IoMdAnalytics style={{display: product.id === 3 ? 'block' : 'none'}} />
+                                        <FaServer style={{display: product.id === 3 ? 'block' : 'none'}} />
                                     </PricingCardIcon>
                                     <PricingCardPlan>{product.name}</PricingCardPlan>
                                     <PricingCardCost>R{product.price}</PricingCardCost>

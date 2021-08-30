@@ -36,7 +36,7 @@ const Home = () => {
 
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} home={true} />
       <Navbar toggle={toggle} menu={menuItems} home={true} />
       <InfoSection {...homeCoverData} />
       <InfoSection {...homeAboutObj} />

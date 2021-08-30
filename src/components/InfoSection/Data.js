@@ -72,7 +72,7 @@ export const homeCoverData = {
     lightText: true,
     lightTextDesc: true,
     topLine: 'Connect your business',
-    headline: 'Online solution and many more...',
+    headline: 'Customized online solutions for you...',
     description: 'Ready for the journey?',
     buttonLabel: "Get In Touch",
     imgStart: false,
